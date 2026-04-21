@@ -1,0 +1,176 @@
+@media only screen and (max-width: 660px) {
+    html {
+        font-size: 3.25vw !important;
+    }
+
+    .forbidden-lands.sheet {
+        .main-tab .border, 
+        .character .bio.border, 
+        .character .currencies.border, 
+        .character .consumables.border, 
+        .character .actions.border 
+        {
+            border-width: 0.35rem;
+            border-image-width: 0.5rem;
+        }
+
+        .character .bio.border { 
+            padding: 0.175rem 0.35rem;
+        }
+
+        .character .bio * {
+            font-size: 0.85rem;
+        }
+
+        .character .bio .avatar {
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+
+        .character .bio table {
+            margin: 0.175rem 0;
+        }
+
+        .character .bio table td {
+            padding: 0.1rem;
+        }
+
+        .character .bio label {
+            margin-left: 0.175rem;
+        }
+
+        .character .bio .willpower.skulls {
+            justify-content: end;
+        }
+
+        .sheet-tabs {
+            margin: 0.35rem 0;
+
+            .tab-item {
+                font-variant-caps: small-caps;
+                text-transform: lowercase;
+                padding: 0.35rem 0.5rem;
+            }
+
+            .tab-item::first-letter {
+                text-transform: uppercase;
+            }
+            
+            .tab-item.active {
+                text-decoration-line: underline overline;
+                text-underline-offset: 0.4rem;
+                text-decoration-style: double;
+            }
+
+            .tab-item.active:before, 
+            .tab-item.active:after
+            {
+                display: none;
+            }
+        }
+
+        .tab {
+            overflow-y: auto;
+        }
+
+        .main-tab {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .attributes {
+            grid-column: span 3;
+        }
+
+        .conditions-grid {
+            gap: revert;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: revert;
+        }
+
+        .conditions-grid a.condition {
+            grid: revert;
+            grid-template-columns: 1fr auto;
+            gap: 0.5rem;
+        }
+
+        .skills {
+            grid-column: span 2;
+        }
+
+        .combat-tab {
+            height: revert;
+            min-height: 100%;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+        }
+
+        .character .weapons .weapon .range {
+            flex-basis: 20%;
+        }
+
+        .character .weapons .weapon .weapon-actions {
+        }
+
+        .gear-tab {
+            .gears .items button {
+                width: 1rem;
+            }
+
+            .currencies .header b {
+                display: none;
+            }
+
+            .currencies .values label {
+                margin: 0 0 0 0.5rem;
+            }
+
+            .consumables {
+                grid-template-columns: auto auto;
+            }
+
+            .consumables .consumable:first-child {
+                display: none;
+            }
+
+            .consumables .consumable {
+                padding: 0.175rem;
+            }
+            .gears .items>table th:last-child, 
+            .gears .items>table td:last-child 
+            {
+                width: 4.5rem;
+                white-space: wrap;
+            }
+
+        }
+
+        .item-list .items .item img {
+            width: 2rem;
+        }
+
+        .configure-sheet, 
+        .char-gen 
+        {
+            display: none !important;
+        }
+
+    }
+
+    .forbidden-lands.item {
+        min-width: 100% !important;
+        min-height: 100% !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
+    }
+
+    #so-main-buttons.small-display {
+        display: none !important;
+    }
+
+    .sheet-only-container > .button-container {
+        left: 1rem;
+        top: 2.25rem;
+    }
+
+
+}
